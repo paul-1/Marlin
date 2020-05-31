@@ -981,7 +981,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-<<<<<<< HEAD
+
 #define NOZZLE_TO_PROBE_OFFSET { -40, -5, -3.7 }
 
 // Most probes should stay away from the edges of the bed, but
@@ -2258,7 +2258,7 @@
   //#define NEOPIXEL_PIN     4       // LED driving pin
   //#define NEOPIXEL2_TYPE NEOPIXEL_TYPE
   //#define NEOPIXEL2_PIN    5
-  #define NEOPIXEL_PIXELS 10       // Number of LEDs in the strip, larger of 2 strips if 2 neopixel strips are used
+  #define NEOPIXEL_PIXELS 15       // Number of LEDs in the strip, larger of 2 strips if 2 neopixel strips are used
   #define NEOPIXEL_IS_SEQUENTIAL   // Sequential display for temperature change - LED by LED. Disable to change all LEDs at once.
   #define NEOPIXEL_BRIGHTNESS 127  // Initial brightness (0-255)
   #define NEOPIXEL_STARTUP_TEST  // Cycle through colors at startup
