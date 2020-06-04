@@ -2254,18 +2254,27 @@
 // Support for Adafruit Neopixel LED driver
 #define NEOPIXEL_LED
 #if ENABLED(NEOPIXEL_LED)
-  #define NEOPIXEL_TYPE   NEO_GRB // NEO_GRBW / NEO_GRB - four/three channel driver type (defined in Adafruit_NeoPixel.h)
-  //#define NEOPIXEL_PIN     4       // LED driving pin
+  #define NEOPIXEL_TYPE  ( NEO_GRB + NEO_KHZ800 )// NEO_GRBW / NEO_GRB - four/three channel driver type (defined in Adafruit_NeoPixel.h)
+  #define NEOPIXEL_PIN     PC7       // LED driving pin
   //#define NEOPIXEL2_TYPE NEOPIXEL_TYPE
   //#define NEOPIXEL2_PIN    5
-  #define NEOPIXEL_PIXELS 15       // Number of LEDs in the strip, larger of 2 strips if 2 neopixel strips are used
-  #define NEOPIXEL_IS_SEQUENTIAL   // Sequential display for temperature change - LED by LED. Disable to change all LEDs at once.
-  #define NEOPIXEL_BRIGHTNESS 127  // Initial brightness (0-255)
+  #define NEOPIXEL_PIXELS 14       // Number of LEDs in the strip, larger of 2 strips if 2 neopixel strips are used
+  //#define NEOPIXEL_IS_SEQUENTIAL   // Sequential display for temperature change - LED by LED. Disable to change all LEDs at once.
+  #define NEOPIXEL_BRIGHTNESS 200  // Initial brightness (0-255)
   #define NEOPIXEL_STARTUP_TEST  // Cycle through colors at startup
 
   // Use a single Neopixel LED for static (background) lighting
   //#define NEOPIXEL_BKGD_LED_INDEX  0               // Index of the LED to use
   //#define NEOPIXEL_BKGD_COLOR { 255, 255, 255, 0 } // R, G, B, W
+
+  #define LED_USER_PRESET_STARTUP
+  #define LED_COLOR_PRESETS
+  #define LED_USER_PRESET_RED 255
+  #define LED_USER_PRESET_GREEN 255
+  #define LED_USER_PRESET_BLUE 255
+  #define LED_USER_PRESET_WHITE 255
+  #define LED_USER_PRESET_BRIGHTNESS 200
+
 #endif
 
 /**
