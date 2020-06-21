@@ -493,9 +493,9 @@
   //#define DEFAULT_Ki 1.54
   //#define DEFAULT_Kd 76.55
   //Autotune results
-  #define DEFAULT_Kp 21.40
-  #define DEFAULT_Ki 1.75
-  #define DEFAULT_Kd 65.63
+  #define DEFAULT_Kp 19.04
+  #define DEFAULT_Ki 1.47
+  #define DEFAULT_Kd 61.83
 
 #endif // PIDTEMP
 
